@@ -60,6 +60,7 @@ window.addEventListener('load', ()=>{
     //game start
     async function startGame(gameMode){
         //setting character in the middle
+        score.score = 0;
         character.x = (canvas.width - character.w)/ 2;
         character.y = (canvas.height - character.h) / 2;
         switch(gameMode){

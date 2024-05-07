@@ -4,7 +4,7 @@ body{
     margin: 0;
     overflow: hidden;
     font-family: "Roboto", sans-serif;
-    /* user-select: none ; */
+    user-select: none ;
 }
 
 canvas{
