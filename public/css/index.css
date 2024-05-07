@@ -1,0 +1,100 @@
+@import url("/public/fonts/Roboto/Roboto-Black.ttf");
+
+body{
+    margin: 0;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+    /* user-select: none ; */
+}
+
+canvas{
+    border: 1px solid #0A0A0A;
+    box-sizing: border-box;
+    background-color: #FAFAFA;
+}
+
+.countdownTimer{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    line-height: 100vh;
+    top: 0;
+    z-index: 100;
+    font-size: 20vw;
+    text-align: center;
+    display: none;
+}
+
+.timer{
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 25vh;
+    line-height: 25vh;
+    top: 0;
+    z-index: 100;
+    font-size: 7vw;
+    text-align: center;
+}
+
+.mainMenu{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    width: 30vw;
+    height: 100vh;
+    left: 35vw;
+    border: 1px solid #0A0A0A;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.mainMenu > .title{
+    font-size: 7vw;
+    text-align: center;
+    width: 100%;
+    color: #0A0A0A;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.mainMenu > .gameModes{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 40px; */
+}
+
+.mainMenu > .gameModes > div{
+    z-index: 3;
+    border: 1px solid #0A0A0A;
+    width: 70%;
+    padding: 30px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    /* user-select: all; */
+}
+
+.mainMenu > .gameModes > div:hover{
+    background-color: #0A0A0A;
+    color: #FAFAFA;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.scorePanel{
+    position: absolute;
+    top: 100vh;
+    left: 20vw;
+    width: 60vw;
+    height: 60vh;
+    border: 1px solid #0A0A0A;
+    text-align: center;
+    line-height: 60vh;
+    font-size: 7vw;
+    transition: 1.5s ease-in-out;
+}
